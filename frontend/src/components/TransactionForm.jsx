@@ -1,6 +1,6 @@
 import axios from "axios";
-import { useMutation,QueryClient,useQuery } from "@tanstack/react-query";
-import { postTransactions,fetchTransactions } from "../api";
+import { useMutation,QueryClient} from "@tanstack/react-query";
+import { postTransactions } from "../api";
 import toast from "react-hot-toast";
 const TransactionForm = () => {
 	const queryClient = new QueryClient()
@@ -74,7 +74,7 @@ const TransactionForm = () => {
             name="description"
             type="text"
             required
-            placeholder="Rent, Groceries, Salary, etc."
+            placeholder="Rent, Groceries, etc."
           />
         </div>
       </div>
@@ -145,7 +145,7 @@ const TransactionForm = () => {
             id="location"
             name="location"
             type="text"
-            placeholder="New York"
+            placeholder="Dehradun"
           />
         </div>
 
